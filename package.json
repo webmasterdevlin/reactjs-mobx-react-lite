@@ -2,17 +2,6 @@
   "name": "react-web-mobx",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.19.2",
-    "concurrently": "^5.2.0",
-    "mobx": "^5.15.4",
-    "mobx-react-lite": "^2.0.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "use-react-router": "^1.0.7"
-  },
   "scripts": {
     "serve": "react-scripts start",
     "build": "react-scripts build",
@@ -20,6 +9,21 @@
     "eject": "react-scripts eject",
     "backend": "json-server --watch db.json --port 5000 --delay=750",
     "start": "concurrently \"yarn backend\" \"set PORT=3006 && yarn serve\""
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "concurrently": "^5.3.0",
+    "mobx": "^6.0.0",
+    "mobx-react-lite": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "use-react-router": "^1.0.7"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.2",
+    "prettier": "^2.1.2"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,9 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "json-server": "^0.16.1",
-    "prettier": "^2.0.5"
   }
 }
